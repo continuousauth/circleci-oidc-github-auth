@@ -18,7 +18,7 @@ async function main() {
     throw new Error('Missing CFA_SECRET environment variable');
   }
 
-  const resp = await got.get(`https://continuousauth.dev/api/request/${CFA_PROJECT_ID}/circleci/credentials`, {
+  const resp = await got.post(`https://continuousauth.dev/api/request/${CFA_PROJECT_ID}/circleci/credentials`, {
     body: JSON.stringify({
       token: CIRCLE_OIDC_TOKEN,
     }),
