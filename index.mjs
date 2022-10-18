@@ -37,7 +37,7 @@ async function main() {
     await fs.writeFile(BASH_ENV, '');
   }
 
-  await fs.appendFile(BASH_ENV, `export GITHUB_TOKEN="${GITHUB_TOKEN}"\n`);
+  await fs.appendFile(BASH_ENV, `export GITHUB_TOKEN="${GITHUB_TOKEN}"\nexport GITHUB_ACTION=1\n`);
 }
 
 main()
