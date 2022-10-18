@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "Samuel Attard <sattard@salesforce.com>",
   "license": "MIT",
-  "description": "Automatically injects a GITHUB_TOKEN variable into the CircleCI environment via OIDC",
+  "description": "Obtain a Semantic Release GitHub token from a CircleCI OIDC token",
   "bin": {
     "circleci-oidc-github-auth": "index.mjs"
   },
