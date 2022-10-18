@@ -40,10 +40,8 @@ async function main() {
   await fs.appendFile(BASH_ENV, `export GITHUB_TOKEN="${GITHUB_TOKEN}"\n`);
 }
 
-if (require.main === module) {
-  main()
-    .catch((err) => {
-      console.error(err);
-      process.exit(1);
-    });
-}
+main()
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
