@@ -1,6 +1,6 @@
 {
   "name": "@continuous-auth/circleci-oidc-github-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Samuel Attard <sattard@salesforce.com>",
   "license": "MIT",
